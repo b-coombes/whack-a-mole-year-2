@@ -17,8 +17,17 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  sf::Sprite ball;
-  sf::Texture ball_texture;
+  sf::Sprite bird;
+  sf::Texture bird_texture;
+  sf::Sprite background;
+  sf::Texture background_texture;
+  sf::Font font;
+  sf::Text title_text;
+  sf::Text play_text;
+  sf::Text quit_text;
+
+  bool in_menu = true;
+  bool play_selected = true;
 
 };
 
